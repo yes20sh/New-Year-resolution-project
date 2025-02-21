@@ -19,10 +19,11 @@ This is a simple Flask web application to manage your New Year resolutions. You 
 ## Installation
 
 1. Clone the repository:
-    ```sh
+```
+    sh
     git clone https://github.com/yourusername/New-Year-resolution-project.git
     cd New-Year-resolution-project
-    ```
+ ```
 
 2. Create a virtual environment:
     ```sh
