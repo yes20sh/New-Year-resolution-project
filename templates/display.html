@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %} All {% endblock %} 
+{% block body %}
+
+
+    <!-- container  -->
+     <div class="container mt-5">
+          <!-- table  -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">S.no</th>
+                <th scope="col">Title</th>
+                <th scope="col">Description</th>
+                <th scope="col">Date</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% if dply_task | length == 0 %}
+              <tr>
+                <td colspan="5" class="text-center">No data found</td>
+              </tr>
+                
+              {% else %}   
+       
+              {% for task in dply_task %}
+              <tr>
+                <th scope="row">{{loop.index}}</th>
+                <td>{{task.title}}</td>
+                <td>{{task.desc}}</td>
+                <td>{{task.date_created}}</td>
+                <td>
+                  <a href="update/{{task.sno}}"  type="button" class="btn btn-primary btn-sm mx-2">Update</button>
+                  <a href="delete/{{task.sno}}" type="button" class="btn btn-danger btn-sm mx-2">Delete</button>
+                </td>
+              </tr>
+              {% endfor %}
+              {% endif %}
+            </tbody>
+          </table>
+          <!-- table end  -->
+     </div>
+     <!-- container end  -->
+     {% endblock %}
+
+
