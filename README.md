@@ -2,6 +2,9 @@
 
 This is a simple Flask web application to manage your New Year resolutions. You can add, display, update, and delete your resolutions.
 
+
+![diagram-export-2-22-2025-1_22_09-PM](https://github.com/user-attachments/assets/9d3a5b69-0d97-4e11-b17c-15046013e1c9)
+
 ## Features
 
 - Add new resolutions with a title and description.
